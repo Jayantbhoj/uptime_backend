@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package monitor;
+
+service MonitorService {
+  rpc CheckWebsite (CheckRequest) returns (CheckResponse);
+}
+
+message CheckRequest {
+  string url = 1;
+}
+
+message CheckResponse {
+  string url = 1;
+  string status = 2;
+  int32 responseTime = 3;
+}
