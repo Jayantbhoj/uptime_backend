@@ -1,1 +1,64 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Environment variables
 .env
+.env.local
+.env.development
+.env.production
+
+# Prisma
+prisma/.env
+prisma/migrations/
+
+# gRPC generated files (if any)
+*.pb.*
+*.proto~
+
+# Logs
+logs/
+*.log
+debug.log
+error.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Database & Cache
+postgres-data/
+redis-data/
+*.sqlite
+*.db
+*.db-wal
+*.db-shm
+dump.rdb
+*.pkl
+
+# Kafka
+kafka-data/
+zookeeper-data/
+
+# Docker
+docker-compose.override.yml
+docker-logs/
+.dockerignore
+
+# VS Code settings
+.vscode/
+.history/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+out/
+coverage/
+
+# Git related
+.gitignore
+
